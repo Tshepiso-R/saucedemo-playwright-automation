@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.sdet.tests.SauceDemoSmokeTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-11-22T11:37:19.172Z" hostname="LAPTOP-IR46E1ER" time="15.496">
+<testsuite name="com.sdet.tests.SauceDemoSmokeTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-11-22T12:11:25.175Z" hostname="LAPTOP-IR46E1ER" time="12.779">
   <properties/>
-  <testcase name="testSuccessfulLogin" classname="com.sdet.tests.SauceDemoSmokeTests" time="3.993"/>
-  <testcase name="testProductsDisplayed" classname="com.sdet.tests.SauceDemoSmokeTests" time="0.927"/>
-  <testcase name="testAddProductToCart" classname="com.sdet.tests.SauceDemoSmokeTests" time="0.985"/>
-  <testcase name="testCompleteCheckout" classname="com.sdet.tests.SauceDemoSmokeTests" time="1.274"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testSuccessfulLogin" classname="com.sdet.tests.SauceDemoSmokeTests" time="0.934"/>
+  <testcase name="testProductsDisplayed" classname="com.sdet.tests.SauceDemoSmokeTests" time="0.942"/>
+  <testcase name="testAddProductToCart" classname="com.sdet.tests.SauceDemoSmokeTests" time="0.98"/>
+  <testcase name="testCompleteCheckout" classname="com.sdet.tests.SauceDemoSmokeTests" time="1.247"/>
+  <system-out><![CDATA[Running tests on Chromium
+Running tests on Chromium
+Running tests on Chromium
+Running tests on Chromium
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
