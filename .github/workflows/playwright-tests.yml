@@ -15,6 +15,7 @@ jobs:
     strategy:
       matrix:
         browser: [chromium, firefox, webkit]
+      fail-fast: false
     
     steps:
       - name: Checkout code
@@ -51,11 +52,4 @@ jobs:
         with:
           name: test-results-${{ matrix.browser }}
           path: build/reports/tests/test/
-      
-      - name: Publish test report
-        if: always()
-        uses: dorny/test-reporter@v1
-        with:
-          name: Test Results (${{ matrix.browser }})
-          path: build/test-results/test/*.xml
-          reporter: java-junit
+          retention-days: 30
