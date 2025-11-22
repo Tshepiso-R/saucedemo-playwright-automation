@@ -1,7 +1,5 @@
 # SauceDemo Playwright Automation
 
-[![Playwright Tests](https://github.com/Tshepiso-R/saucedemo-playwright-automation/actions/workflows/playwright-tests.yml/badge.svg)](https://github.com/Tshepiso-R/saucedemo-playwright-automation/actions/workflows/playwright-tests.yml)
-
 Automated testing framework for SauceDemo e-commerce application using Playwright, Java, and TestNG.
 
 ## Technology Stack
@@ -51,7 +49,6 @@ src/
 - Automated test reports (HTML)
 - Reusable utility classes
 - Clean code structure
-- GitHub Actions CI/CD integration
 
 ## Prerequisites
 
@@ -354,53 +351,6 @@ Test data lives in properties files, not in the code. Want to test with differen
 ### Reusable Base Classes
 - **BasePage** provides common methods all pages can use
 - **BaseTest** handles browser setup and teardown automatically
-
-## Continuous Integration
-
-This project uses GitHub Actions for automated testing.
-
-### What Runs Automatically
-
-Every time you push code or create a pull request:
-- Tests run on **3 browsers**: Chromium, Firefox, and WebKit
-- Tests run on **Ubuntu Linux** (GitHub's free runner)
-- Test reports are generated and saved as artifacts
-- Build status is shown with a badge at the top of this README
-
-### View Test Results
-
-1. Go to the **Actions** tab in GitHub
-2. Click on the latest workflow run
-3. See test results for each browser
-4. Download detailed HTML reports from artifacts
-
-### Manual Trigger
-
-You can also run tests manually:
-1. Go to **Actions** tab
-2. Click **Playwright Tests** workflow
-3. Click **Run workflow**
-4. Select branch and click **Run workflow**
-
-### CI/CD Configuration
-
-The workflow is defined in `.github/workflows/playwright-tests.yml`
-
-**What it does:**
-- Checks out your code
-- Sets up Java 11
-- Caches Gradle dependencies
-- Builds the project
-- Runs tests on all 3 browsers in parallel
-- Uploads test reports
-
-## CI/CD Integration
-
-This framework works with continuous integration tools on any platform:
-- **Jenkins** - Add a build step: `./gradlew clean test` (or `.\gradlew.bat clean test` on Windows)
-- **GitHub Actions** - Already configured! See `.github/workflows/playwright-tests.yml`
-- **GitLab CI** - Configure `.gitlab-ci.yml` for any platform
-- **Azure DevOps** - Add Gradle task, supports all platforms
 
 ## Questions or Issues?
 
