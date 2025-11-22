@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'com.sdet.assessment'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.microsoft.playwright:playwright:1.40.0'
+    testImplementation 'org.testng:testng:7.8.0'
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+    testImplementation 'com.google.code.gson:gson:2.10.1'
+}
+
+test {
+    useTestNG()
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}

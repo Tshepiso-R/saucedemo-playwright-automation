@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sdet.tests.SauceDemoSmokeTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-11-22T11:37:19.172Z" hostname="LAPTOP-IR46E1ER" time="15.496">
+  <properties/>
+  <testcase name="testSuccessfulLogin" classname="com.sdet.tests.SauceDemoSmokeTests" time="3.993"/>
+  <testcase name="testProductsDisplayed" classname="com.sdet.tests.SauceDemoSmokeTests" time="0.927"/>
+  <testcase name="testAddProductToCart" classname="com.sdet.tests.SauceDemoSmokeTests" time="0.985"/>
+  <testcase name="testCompleteCheckout" classname="com.sdet.tests.SauceDemoSmokeTests" time="1.274"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
